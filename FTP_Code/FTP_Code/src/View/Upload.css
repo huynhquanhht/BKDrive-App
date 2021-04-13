@@ -1,0 +1,28 @@
+#btnUpload{
+	-fx-background-color:#0064C8;
+}
+#btnCancel{
+	-fx-background-color:#CC0000;
+}
+#acUpload{
+	-fx-background-color:#ffffff;
+}
+#acTop{
+	-fx-background-color:#0064C8;
+}
+#btnChooseFile{
+	-fx-background-color:#0064C8;
+}
+#btnChooseFolder{
+	-fx-background-color:#0064C8;
+}
+.table-row-cell {
+   	 -fx-cell-size: 40.0px;
+   	 -fx-font-size:14.0px;  
+}
+.table-cell
+{
+	 -fx-alignment: CENTER-LEFT;
+    -fx-border-color: transparent;
+}
+

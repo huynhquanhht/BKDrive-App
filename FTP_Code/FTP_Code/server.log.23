@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-12-26T02:18:44.275440300Z</date>
+  <millis>1608949124275</millis>
+  <nanos>440300</nanos>
+  <sequence>15</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>transfer.loggerserver</class>
+  <method>log</method>
+  <thread>42</thread>
+  <message>START: 2020-12-26T09:18:44.267463</message>
+</record>
+<record>
+  <date>2020-12-26T02:19:05.459063600Z</date>
+  <millis>1608949145459</millis>
+  <nanos>63600</nanos>
+  <sequence>16</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>transfer.loggerclient</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message> L_START_TIME 2020-12-26T09:19:05.457066700</message>
+</record>
+<record>
+  <date>2020-12-26T02:19:06.618687Z</date>
+  <millis>1608949146618</millis>
+  <nanos>687000</nanos>
+  <sequence>17</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>transfer.loggerclient</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message> L_END_TIME 2020-12-26T09:19:05.457066700</message>
+</record>
+</log>

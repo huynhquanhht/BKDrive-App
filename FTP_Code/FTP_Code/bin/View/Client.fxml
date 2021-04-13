@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="623.0" prefWidth="855.0" stylesheets="@Client.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ClientController">
+   <children>
+      <AnchorPane prefHeight="41.0" prefWidth="856.0" style="-fx-background-color: #0064C8;">
+         <children>
+            <Rectangle arcHeight="50.0" arcWidth="35.0" fill="#f5f5f5" height="31.0" layoutX="175.0" layoutY="5.0" stroke="WHITE" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeType="INSIDE" width="219.0" />
+            <Label layoutX="189.0" layoutY="11.0" text="Computer:" textFill="#4b4c4e">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="50.0" arcWidth="35.0" fill="#f9fbfc" height="31.0" layoutX="414.0" layoutY="6.0" stroke="#fffdfd" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeType="INSIDE" width="108.0" />
+            <Label layoutX="423.0" layoutY="12.0" text="Port:" textFill="#4b4c4e">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="456.0" layoutY="12.0" text="21" textFill="#4b4c4e">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="259.0" layoutY="12.0" text="IP Address" textFill="#4b4c4e">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="694.0" layoutY="10.0" text="November 26, 2020" textFill="#fcfafa">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="641.0" layoutY="10.0" text="22:19" textFill="#fcfafa">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="27.0" fitWidth="75.0" layoutX="22.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/LogoWhite.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="63.0" layoutY="7.0" text="BK Drive" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <VBox id="ToolBox" layoutY="41.0" prefHeight="580.0" prefWidth="164.0" style="-fx-background-color: #E9EDF2;" stylesheets="@Client.css">
+         <children>
+            <AnchorPane prefHeight="108.0" prefWidth="163.0">
+               <VBox.margin>
+                  <Insets right="1.0" />
+               </VBox.margin>
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="57.0" layoutX="54.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/user.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="txtUsername" alignment="CENTER" contentDisplay="CENTER" layoutX="38.0" layoutY="74.0" text="Quan Huynh" textFill="#4b4c4e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <Button id="btnRefresh" fx:id="btnRefresh" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#refresh" prefHeight="46.0" prefWidth="220.0" style="-fx-border-radius: 0;" stylesheets="@Client.css" text="    Refresh" textFill="#4b4c4e">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView id="imgRefresh" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/refresh-page-option.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button id="btnUpload" fx:id="btnUpload" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#loadUploadInterface" prefHeight="46.0" prefWidth="220.0" style="-fx-border-radius: 0;" stylesheets="@Client.css" text="    Upload" textFill="#4b4c4e">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView id="imgUpload" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/upload.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding></Button>
+            <Button id="btnDownload" fx:id="btnDownload" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#download" prefHeight="46.0" prefWidth="220.0" stylesheets="@Client.css" text="    Download" textFill="#4b4c4e">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/download.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding></Button>
+            <Button id="btnDelete" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#delete" prefHeight="46.0" prefWidth="220.0" stylesheets="@Client.css" text="    Delete" textFill="#4b4c4e">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView id="imgDelete" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding></Button>
+            <Button id="btnDisconnect" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="46.0" prefWidth="220.0" stylesheets="@Client.css" text="    Disconnect" textFill="#4b4c4e">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView id="imgDisconnect" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/disconnected-chains.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding></Button>
+         </children>
+      </VBox>
+      <AnchorPane id="direct" layoutX="163.0" layoutY="41.0" prefHeight="31.0" prefWidth="693.0" style="-fx-border-color: #4B44E;" stylesheets="@Client.css">
+         <children>
+            <Button id="btnBack" fx:id="btnBack" alignment="BASELINE_LEFT" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#back" prefHeight="29.0" prefWidth="37.0" stylesheets="@Client.css">
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label fx:id="lblPath" layoutX="44.0" layoutY="6.0" text="C:/User/AppData" textFill="#4b4c4e">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextArea fx:id="txtServer" disable="true" layoutX="164.0" layoutY="423.0" prefHeight="197.0" prefWidth="693.0" wrapText="true" />
+      <Label layoutX="168.0" layoutY="403.0" text="Server:" textFill="#4b4c4e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Line endX="-173.0" endY="-468.0" layoutX="374.0" layoutY="537.0" startX="-173.0" startY="-491.0" stroke="#4b4c4e" />
+      <TableView id="tvClient" fx:id="tvClient" layoutX="163.0" layoutY="72.0" onMouseClicked="#clickRowTableView" prefHeight="331.0" prefWidth="693.0">
+        <columns>
+            <TableColumn id="tcImg" fx:id="tcImage" prefWidth="43.0" />
+            <TableColumn id="tcName" fx:id="tcName" prefWidth="301.0" text="Name" />
+            <TableColumn id="tcDate" fx:id="tcDate" prefWidth="111.0" text="Date modified" />
+            <TableColumn id="tcSize" fx:id="tcSize" minWidth="0.0" prefWidth="75.0" text="Size" />
+            <TableColumn id="tcType" fx:id="tcType" prefWidth="161.0" text="Type" />
+        </columns>
+      </TableView>
+      <Line endX="-173.0" endY="-468.0" layoutX="860.0" layoutY="500.0" startX="-173.0" startY="-491.0" stroke="WHITE" />
+      <Line endX="-173.0" endY="-468.0" layoutX="578.0" layoutY="501.0" startX="-173.0" startY="-491.0" stroke="WHITE" />
+   </children>
+</AnchorPane>

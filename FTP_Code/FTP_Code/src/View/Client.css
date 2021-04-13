@@ -1,0 +1,127 @@
+#btnRefresh{
+	-fx-background-color: #E9EDF2;
+	 -fx-font-size: 12.0pt;
+}
+#btnRefresh:hover{
+	-fx-background-color:#FFFFFF;
+	-fx-text-fill:#038FF4;
+	-fx-font-weight:bold;
+	 -fx-font-size: 12.0pt;
+}
+#btnRefresh:pressed{
+	-fx-background-color:#FFFFFF;
+	-fx-text-fill:#038FF4;
+	-fx-font-weight:bold;
+	 -fx-font-size: 12.0pt;
+}
+
+
+#btnDownload{
+	-fx-background-color:#E9EDF2;
+	 -fx-font-size: 12.0pt;
+	
+}
+#btnDownload:hover{
+	-fx-background-color:#FFFFFF;
+	-fx-text-fill:#038FF4;
+	-fx-font-weight:bold;
+	 -fx-font-size: 12.0pt;
+}
+#btnDownload:pressed{
+	-fx-background-color:#FFFFFF;
+	-fx-text-fill:#038FF4;
+	-fx-font-weight:bold;
+	 -fx-font-size: 12.0pt;
+}
+#btnUpload{
+	-fx-background-color:#E9EDF2;
+	 -fx-font-size: 12.0pt;
+}
+#btnUpload:hover{
+	-fx-background-color:#FFFFFF;
+	-fx-text-fill:#038FF4;
+	-fx-font-weight:bold;
+	 -fx-font-size: 12.0pt;
+}
+#btnUpload:pressed{
+	-fx-background-color:#FFFFFF;
+	-fx-text-fill:#038FF4;
+	-fx-font-weight:bold;
+	 -fx-font-size: 12.0pt;
+}
+
+#btnDelete{
+	-fx-background-color:#E9EDF2;
+	 -fx-font-size: 12.0pt;
+}
+#btnDelete:hover{
+	-fx-background-color:#FFFFFF;
+	-fx-text-fill:#038FF4;
+	-fx-font-weight:bold;
+	 -fx-font-size: 12.0pt;
+	
+}
+#btnDelete:pressed{
+	-fx-background-color:#FFFFFF;
+	-fx-text-fill:#038FF4;
+	-fx-font-weight:bold;
+	 -fx-font-size: 12.0pt;
+}
+#btnDisconnect{
+	-fx-background-color:#E9EDF2;
+	 -fx-font-size: 12.0pt;
+}
+#btnDisconnect:hover{
+	-fx-background-color:#FFFFFF;
+	-fx-text-fill:#038FF4;
+	-fx-font-weight:bold;
+	 -fx-font-size: 12.0pt;
+}
+#btnDisconnect:pressed{
+	-fx-background-color:#FFFFFF;
+	-fx-text-fill:#038FF4;
+	-fx-font-weight:bold;
+	-fx-font-size: 12.0pt;
+}
+#imgRefresh{
+	-fx-text-fill:#038FF4;
+}
+#imgRefresh:hover{
+	-fx-background-color:#E9EDF2;
+}
+#ToolBox{
+	-fx-border-color:#C8C8C8;
+}
+#direct{
+	-fx-background-color:#FFFFFF;
+	-fx-border-color:#C8C8C8;
+	-fx-border-insets: 0.0 0.0 0.0 0.0;
+}
+#InfoBar{
+	-fx-border-color:#C8C8C8;
+}
+#btnBack{
+	-fx-background-color:#FFFFFF;
+	
+}
+#btnBack:hover{
+	-fx-background-color:#E9EDF2;
+}
+#tcName {
+	-fx-font-family: "Arial";
+}
+#tvClient{
+
+}
+.table-row-cell {
+   	 -fx-cell-size: 40.0px;
+   	 -fx-font-size:14.0px;  
+}
+.table-cell
+{
+	 -fx-alignment: CENTER-LEFT;
+    -fx-border-color: transparent;
+}
+
+
+

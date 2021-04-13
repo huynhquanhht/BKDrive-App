@@ -1,0 +1,19 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#btnConnect{
+	-fx-background-color: #005FBF;
+
+	
+}
+#btnConnect:hover{
+	-fx-background-color: #0072E6;
+
+	
+}
+#txtComputer{
+	
+}
+#mainlogin{
+	-fx-background-color: #ffffff;
+	-fx-border-style: solid;
+	-fx-border-color: #C8C8C8;
+}

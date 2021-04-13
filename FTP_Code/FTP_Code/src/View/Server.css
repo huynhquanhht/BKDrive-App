@@ -1,0 +1,61 @@
+#btnOpen{
+	-fx-background-color: #E9EDF2;
+	 -fx-font-size: 12pt;
+}
+#btnOpen:hover{
+	-fx-background-color:#FFFFFF;
+	-fx-text-fill:#038FF4;
+	-fx-font-weight:bold;
+	 -fx-font-size: 12pt;
+}
+#btnOpen:pressed{
+	-fx-background-color:#FFFFFF;
+	-fx-text-fill:#038FF4;
+	-fx-font-weight:bold;
+	 -fx-font-size: 12pt;
+}
+
+#btnDisconnect{
+	-fx-background-color: #E9EDF2;
+	 -fx-font-size: 12pt;
+}
+#btnDisconnect:hover{
+	-fx-background-color:#FFFFFF;
+	-fx-text-fill:#038FF4;
+	-fx-font-weight:bold;
+	 -fx-font-size: 12pt;
+}
+#btnDisconnect:pressed{
+	-fx-background-color:#FFFFFF;
+	-fx-text-fill:#038FF4;
+	-fx-font-weight:bold;
+	 -fx-font-size: 12pt;
+}
+#btnClose{
+	-fx-background-color: #E9EDF2;
+	 -fx-font-size: 12pt;
+}
+#btnClose:hover{
+	-fx-background-color:#FFFFFF;
+	-fx-text-fill:#038FF4;
+	-fx-font-weight:bold;
+	 -fx-font-size: 12pt;
+}
+#btnClose:pressed{
+	-fx-background-color:#FFFFFF;
+	-fx-text-fill:#038FF4;
+	-fx-font-weight:bold;
+	 -fx-font-size: 12pt;
+}
+#ToolBox{
+	-fx-border-color:#C8C8C8;
+}
+.table-row-cell {
+   	 -fx-cell-size: 30.0px;
+   	 -fx-font-size: 14.0px;  
+}
+.table-cell
+{
+	 -fx-alignment: CENTER-LEFT;
+
+}

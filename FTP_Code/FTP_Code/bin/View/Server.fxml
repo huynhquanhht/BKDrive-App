@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ServerController">
+	<children>
+		<AnchorPane prefHeight="41.0" prefWidth="615.0" style="-fx-background-color: #0064C8;">
+			<children>
+				<Rectangle arcHeight="50.0" arcWidth="35.0" fill="#f5f5f5" height="31.0" layoutX="216.0" layoutY="4.0" stroke="WHITE" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeType="INSIDE" width="219.0" />
+				<Label layoutX="230.0" layoutY="10.0" text="Computer:" textFill="#4b4c4e">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Label>
+				<Rectangle arcHeight="50.0" arcWidth="35.0" fill="#f9fbfc" height="31.0" layoutX="459.0" layoutY="5.0" stroke="#fffdfd" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeType="INSIDE" width="108.0" />
+				<Label layoutX="468.0" layoutY="11.0" text="Port:" textFill="#4b4c4e">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Label>
+				<Label layoutX="501.0" layoutY="11.0" text="21" textFill="#4b4c4e">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Label>
+				<Label fx:id="lblIP" layoutX="300.0" layoutY="11.0" textFill="#4b4c4e">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Label>
+				<ImageView fitHeight="27.0" fitWidth="75.0" layoutX="22.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../Img/LogoWhite.png" />
+					</image>
+				</ImageView>
+				<Label layoutX="63.0" layoutY="7.0" text="BK Drive" textFill="WHITE">
+					<font>
+						<Font name="System Bold" size="18.0" />
+					</font>
+				</Label>
+			</children>
+		</AnchorPane>
+		<VBox id="ToolBox" layoutY="41.0" prefHeight="487.0" prefWidth="164.0" style="-fx-background-color: #E9EDF2;" stylesheets="@Server.css">
+			<children>
+				<AnchorPane prefHeight="108.0" prefWidth="163.0">
+					<VBox.margin>
+						<Insets right="1.0" />
+					</VBox.margin>
+					<children>
+						<ImageView fitHeight="56.0" fitWidth="57.0" layoutX="54.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../Img/server.png" />
+							</image>
+						</ImageView>
+						<Label id="txtUsername" alignment="CENTER" contentDisplay="CENTER" layoutX="55.0" layoutY="74.0" text="SERVER" textFill="#4b4c4e">
+							<font>
+								<Font name="System Bold" size="15.0" />
+							</font>
+						</Label>
+					</children>
+				</AnchorPane>
+				<Button id="btnOpen" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#btnOpenIsClicked" prefHeight="46.0" prefWidth="220.0" stylesheets="@Server.css" text="    Open" textFill="#4b4c4e">
+					<font>
+						<Font size="16.0" />
+					</font>
+					<graphic>
+						<ImageView id="imgRefresh" fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../Img/log-in.png" />
+							</image>
+						</ImageView>
+					</graphic>
+					<padding>
+						<Insets left="20.0" />
+					</padding>
+					<opaqueInsets>
+						<Insets />
+					</opaqueInsets>
+				</Button>
+				<Button id="btnDisconnect" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="46.0" prefWidth="220.0" style="-fx-border-radius: 0;" stylesheets="@Server.css" text="    Disconnect" textFill="#4b4c4e">
+					<font>
+						<Font size="16.0" />
+					</font>
+					<graphic>
+						<ImageView id="imgUpload" fitHeight="27.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../Img/disconnected-chains.png" />
+							</image>
+						</ImageView>
+					</graphic>
+					<padding>
+						<Insets left="20.0" />
+					</padding>
+				</Button>
+				<Button id="btnClose" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="46.0" prefWidth="220.0" stylesheets="@Server.css" text="    Close" textFill="#4b4c4e">
+					<font>
+						<Font size="16.0" />
+					</font>
+					<graphic>
+						<ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../Img/logout.png" />
+							</image>
+						</ImageView>
+					</graphic>
+					<padding>
+						<Insets left="20.0" />
+					</padding>
+				</Button>
+			</children>
+		</VBox>
+		<TableView id="tvServer" fx:id="tvServer" layoutX="163.0" layoutY="41.0" prefHeight="299.0" prefWidth="452.0">
+			<columns>
+				<TableColumn id="tcId" fx:id="tcId" editable="false" prefWidth="75.0" text="Id" />
+				<TableColumn id="tcIP" fx:id="tcIp" editable="false" minWidth="0.0" prefWidth="239.0" text="IP Address" />
+				<TableColumn id="tcName" fx:id="tcName" editable="false" minWidth="0.0" prefWidth="137.0" text="Name" />
+			</columns>
+		</TableView>
+		<TextArea id="txtServer" fx:id="txtServer" editable="false" layoutX="163.0" layoutY="359.0" prefHeight="169.0" prefWidth="452.0" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+		<Label layoutX="166.0" layoutY="339.0" text="Server:">
+			<font>
+				<Font name="System Bold" size="15.0" />
+			</font>
+		</Label>
+		<Line endX="-173.0" endY="-468.0" layoutX="619.0" layoutY="500.0" startX="-173.0" startY="-491.0" stroke="WHITE" />
+	</children>
+</AnchorPane>

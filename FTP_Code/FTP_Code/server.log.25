@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-12-26T02:18:49.165053800Z</date>
+  <millis>1608949129165</millis>
+  <nanos>53800</nanos>
+  <sequence>13</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>transfer.loggerserver</class>
+  <method>log</method>
+  <thread>39</thread>
+  <message> L_END_TIME 2020-12-26T09:18:49.158078700</message>
+</record>
+</log>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-12-26T02:18:42.707241300Z</date>
+  <millis>1608949122707</millis>
+  <nanos>241300</nanos>
+  <sequence>8</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>transfer.loggerserver</class>
+  <method>log</method>
+  <thread>39</thread>
+  <message> DONWLOAD E:\localhost\1\DHBK - Thuc hanh Quan tri Windows Server 2012 v1.pdf STORE E:\0\</message>
+</record>
+<record>
+  <date>2020-12-26T02:18:42.843603800Z</date>
+  <millis>1608949122843</millis>
+  <nanos>603800</nanos>
+  <sequence>9</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>transfer.loggerserver</class>
+  <method>log</method>
+  <thread>39</thread>
+  <message> L_START_TIME 2020-12-26T09:18:42.837713900</message>
+</record>
+<record>
+  <date>2020-12-26T02:18:44.013833400Z</date>
+  <millis>1608949124013</millis>
+  <nanos>833400</nanos>
+  <sequence>10</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>transfer.loggerserver</class>
+  <method>log</method>
+  <thread>40</thread>
+  <message> DONWLOAD E:\localhost\1\client.log STORE E:\0\</message>
+</record>
+<record>
+  <date>2020-12-26T02:18:44.176085700Z</date>
+  <millis>1608949124176</millis>
+  <nanos>85700</nanos>
+  <sequence>11</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>transfer.loggerserver</class>
+  <method>log</method>
+  <thread>40</thread>
+  <message> L_START_TIME 2020-12-26T09:18:44.170065700</message>
+</record>
+<record>
+  <date>2020-12-26T02:18:46.649662500Z</date>
+  <millis>1608949126649</millis>
+  <nanos>662500</nanos>
+  <sequence>12</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>transfer.loggerserver</class>
+  <method>log</method>
+  <thread>40</thread>
+  <message> L_END_TIME 2020-12-26T09:18:46.641682900</message>
+</record>
+<record>
+  <date>2020-12-26T02:18:49.165053800Z</date>
+  <millis>1608949129165</millis>
+  <nanos>53800</nanos>
+  <sequence>13</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>transfer.loggerserver</class>
+  <method>log</method>
+  <thread>39</thread>
+  <message> L_END_TIME 2020-12-26T09:18:49.158078700</message>
+</record>
+</log>
